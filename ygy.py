@@ -112,3 +112,6 @@ def run(server_class=HTTPServer, handler_class=HttpRequestHandler):
 
 if __name__ == "__main__":
     run()
+#для создания задачи (post-запрос) используй команду в терминале curl -X POST http://localhost:8000/tasks -H "Content-Type: application/json" -d '{"title": "Gym", "priority": "low"}'
+#там можно добаить другие задачи
+#для получения списка задач (get-запрос) используй эту команду curl -X GET http://localhost:8000/tasks
